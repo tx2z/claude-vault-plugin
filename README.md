@@ -41,22 +41,24 @@ Open the Claude app and switch to the **Code** tab:
 
 Click the environment dropdown and select **Add environment**:
 
-<img src=".github/assets/setup/step-2.png" width="300">
+<img src=".github/assets/setup/step-3.png" width="400">
 
 Fill in the environment settings:
 - **Name**: anything you like
 - **Network access**: Full
 - **Environment variables**: `GH_TOKEN=your_github_token`
 
-<img src=".github/assets/setup/step-3.png" width="400">
+<img src=".github/assets/setup/step-4.png" width="400">
 
 ### 5. Start a Session
 
-Click **New session**, select your forked repository and the environment you created:
+Click **New session**, select your repository and the environment you created:
 
-<img src=".github/assets/setup/step-4.png" width="500">
+<img src=".github/assets/setup/step-2.png" width="300">
 
 Say "Let's set up the knowledge base" — Claude will guide you through onboarding.
+
+<img src=".github/assets/setup/step-5.png" width="600">
 
 ### 6. (Optional) Open in Obsidian
 
