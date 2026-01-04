@@ -19,7 +19,7 @@ An AI-assisted knowledge base for Obsidian. A hybrid system where you have visua
 
 You interact through Obsidian (or any markdown editor). Claude interacts through Claude Code. Both work on the same files.
 
-**Zero Git knowledge required.** All changes sync automatically to the main branch. Multiple agents can work in parallel — conflicts are resolved automatically.
+**Minimal Git knowledge required** — if you can clone a repo, you're set. All changes sync automatically to the main branch. Conflicts are resolved automatically.
 
 ## Setup
 
