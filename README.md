@@ -34,9 +34,19 @@ Click "Fork" on GitHub to create your own copy.
 - Connect your GitHub account
 - Select your forked repository when starting a session
 
+### 3. Add GitHub Token
+
+For Claude to sync changes to your repository, add a GitHub token:
+
+1. [Create a Personal Access Token](https://github.com/settings/tokens/new) with `repo` scope
+2. In Claude Code settings, add environment variable:
+   ```
+   GH_TOKEN=your_token_here
+   ```
+
 Claude will guide you through onboarding.
 
-### 3. Open in Obsidian
+### 4. Open in Obsidian
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
