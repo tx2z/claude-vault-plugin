@@ -98,10 +98,7 @@ The repository includes an Obsidian plugin (`vault-cli`) that provides a GUI for
 
 1. Open Obsidian Settings → Community plugins
 2. Turn off "Restricted mode" if prompted
-3. Click "Browse" and search won't find it (it's bundled, not in the community registry)
-4. Instead: Settings → Community plugins → Installed plugins → Enable "Vault CLI"
-
-The plugin is pre-installed in `.obsidian/plugins/vault-cli/`.
+3. Find "Vault CLI" in the installed plugins list and enable it
 
 ### Building from Source
 
