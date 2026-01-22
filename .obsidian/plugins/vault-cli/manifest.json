@@ -1,0 +1,9 @@
+{
+  "id": "vault-cli",
+  "name": "Vault CLI",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Sync, status, and tasks via cli.sh",
+  "author": "Pilgrimz",
+  "isDesktopOnly": true
+}

@@ -1,0 +1,260 @@
+/* Output modal */
+.vault-cli-output {
+  font-family: monospace;
+  font-size: 12px;
+  background: var(--background-secondary);
+  padding: 12px;
+  border-radius: 4px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Status bar */
+.vault-cli-status,
+.vault-cli-tasks-bar {
+  cursor: pointer;
+}
+
+.vault-cli-status:hover,
+.vault-cli-tasks-bar:hover {
+  color: var(--text-accent);
+}
+
+.vault-cli-tasks-bar {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.vault-cli-tasks-bar svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Clickable elements */
+.vault-cli-clickable {
+  cursor: pointer;
+}
+
+.vault-cli-clickable:hover {
+  color: var(--text-accent);
+  text-decoration: underline;
+}
+
+/* Status modal */
+.vault-cli-status-modal {
+  min-width: 300px;
+}
+
+.vault-cli-status-info {
+  background: var(--background-secondary);
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.vault-cli-status-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.vault-cli-status-label {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.vault-cli-status-value {
+  font-weight: 500;
+}
+
+.vault-cli-status-clean {
+  color: var(--text-success, #4ade80);
+}
+
+.vault-cli-status-dirty {
+  color: var(--text-warning, #fb923c);
+}
+
+/* Changed files */
+.vault-cli-status-files {
+  margin-bottom: 16px;
+}
+
+.vault-cli-status-files-header {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.vault-cli-status-file-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.vault-cli-status-file-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  font-size: 13px;
+}
+
+.vault-cli-file-status {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  min-width: 60px;
+  text-align: center;
+}
+
+.vault-cli-file-modified {
+  background: var(--color-orange, #fb923c);
+  color: white;
+}
+
+.vault-cli-file-new {
+  background: var(--color-green, #4ade80);
+  color: white;
+}
+
+.vault-cli-file-deleted {
+  background: var(--color-red, #f87171);
+  color: white;
+}
+
+.vault-cli-file-renamed {
+  background: var(--color-blue, #60a5fa);
+  color: white;
+}
+
+.vault-cli-file-name {
+  color: var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Sync button */
+.vault-cli-status-buttons {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--background-modifier-border);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.vault-cli-sync-button {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.vault-cli-sync-button:hover {
+  background: var(--interactive-accent-hover);
+}
+
+.vault-cli-sync-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Tasks modal */
+.vault-cli-file-group {
+  margin-bottom: 16px;
+}
+
+.vault-cli-file-header {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.vault-cli-task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vault-cli-task-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--background-modifier-border-hover);
+}
+
+.vault-cli-task-item:last-child {
+  border-bottom: none;
+}
+
+.vault-cli-task-item input[type="checkbox"] {
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.vault-cli-task-text {
+  flex-grow: 1;
+}
+
+.vault-cli-task-completed .vault-cli-task-text {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+/* Tags */
+.vault-cli-tag {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--background-secondary);
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.vault-cli-tag-p1 {
+  background: var(--background-modifier-error);
+  color: var(--text-on-accent);
+}
+
+.vault-cli-tag-p2 {
+  background: var(--color-orange);
+  color: var(--text-on-accent);
+}
+
+.vault-cli-tag-next {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+/* Footer */
+.vault-cli-task-count {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--background-modifier-border);
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+.vault-cli-no-tasks {
+  color: var(--text-muted);
+  font-style: italic;
+}

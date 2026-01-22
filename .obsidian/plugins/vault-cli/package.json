@@ -1,0 +1,16 @@
+{
+  "name": "vault-cli",
+  "version": "1.0.0",
+  "description": "Vault CLI plugin for Obsidian",
+  "main": "main.js",
+  "scripts": {
+    "build": "esbuild main.ts --bundle --external:obsidian --external:electron --outfile=main.js --format=cjs --platform=node",
+    "dev": "esbuild main.ts --bundle --external:obsidian --external:electron --outfile=main.js --format=cjs --platform=node --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "esbuild": "^0.20.0",
+    "obsidian": "^1.4.0",
+    "typescript": "^5.0.0"
+  }
+}

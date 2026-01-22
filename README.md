@@ -86,6 +86,33 @@ claude -p "./cli.sh sync"
 
 This commits and pushes everything to main.
 
+## Obsidian Plugin
+
+The repository includes an Obsidian plugin (`vault-cli`) that provides a GUI for common CLI operations:
+
+- **Sync button** — run `./cli.sh sync` from the ribbon
+- **Status bar** — see git status at a glance
+- **Tasks panel** — view and filter tasks from your vault
+
+### Enabling the Plugin
+
+1. Open Obsidian Settings → Community plugins
+2. Turn off "Restricted mode" if prompted
+3. Click "Browse" and search won't find it (it's bundled, not in the community registry)
+4. Instead: Settings → Community plugins → Installed plugins → Enable "Vault CLI"
+
+The plugin is pre-installed in `.obsidian/plugins/vault-cli/`.
+
+### Building from Source
+
+The plugin source (`main.ts`) is included. To rebuild after modifications:
+
+```bash
+cd .obsidian/plugins/vault-cli
+npm install
+npm run build
+```
+
 ## Structure
 
 ```
